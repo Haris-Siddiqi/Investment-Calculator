@@ -19,7 +19,7 @@ public class Controller extends Application {
     private TextField LoanAmountFX = new TextField();
     private TextField MonthlyPaymentFX = new TextField(); // Additional feature
     private TextField TotalPaymentFX = new TextField();
-    private Button CalculateFX = new Button("Compute Payment");
+    private Button CalculateFX = new Button("Calculate");
     private Button ResetFX = new Button("Reset"); // Reset button
     
     // Set stage
@@ -33,11 +33,11 @@ public class Controller extends Application {
         gridPane.add(AnnualInterestRateFX, 1, 0);
         gridPane.add(new Label("Number of Years"), 0, 1);
         gridPane.add(NumberOfYearsFX, 1, 1);
-        gridPane.add(new Label("Investment Amount"), 0, 2);
+        gridPane.add(new Label("Principal Investment"), 0, 2);
         gridPane.add(LoanAmountFX, 1, 2);
         gridPane.add(new Label("Monthly Contribution**"), 0, 3);
         gridPane.add(MonthlyPaymentFX, 1, 3);
-        gridPane.add(new Label("Total Payment"), 0, 4);
+        gridPane.add(new Label("Final Balance"), 0, 4);
         gridPane.add(TotalPaymentFX, 1, 4);
         gridPane.add(new Label("*compounded monthly"), 0, 6);
         gridPane.add(new Label("**contributions made at end of month"), 0, 7);
